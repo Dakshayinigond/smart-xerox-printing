@@ -32,9 +32,9 @@ Node.js
 
 Express.js
 
-### Database
-- MySQL  
-- SQL used for writing queries (SELECT, INSERT, UPDATE, DELETE)
+## Database:
+PostgreSQL
+SQL used for writing queries (SELECT, INSERT, UPDATE, DELETE)
 
 ## Tools
 
