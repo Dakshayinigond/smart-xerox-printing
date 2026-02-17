@@ -117,3 +117,6 @@ Frontend and backend are typically run separately during development.
 ## Author
 
 Dakshayini Gond
+
+## Application URL (Localhost)
+http://localhost:3000
