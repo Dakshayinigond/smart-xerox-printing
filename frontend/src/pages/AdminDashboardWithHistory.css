@@ -1,0 +1,73 @@
+/* Wrapper */
+.admin-dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+}
+
+/* Content area */
+.admin-dashboard-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* History title */
+.history-title {
+  margin-top: 50px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* Table styling */
+.history-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.history-table th {
+  background-color: #6a73f3;
+  color: #fff;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.history-table tr:hover {
+  background-color: #eef2ff;
+}
+
+.no-orders {
+  text-align: center;
+  color: #999;
+  padding: 20px 0;
+  font-style: italic;
+}

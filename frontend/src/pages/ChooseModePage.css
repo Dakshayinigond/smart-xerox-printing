@@ -1,0 +1,74 @@
+.choose-mode-container {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.choose-mode-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* deep blue */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #374151;
+}
+
+.mode-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mode-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 300px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.mode-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.mode-card .icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.mode-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e40af;
+}
+
+.mode-card p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Custom colors for each card */
+.mode-card.collect {
+  border-top: 5px solid #10b981; /* green */
+}
+.mode-card.delivery {
+  border-top: 5px solid #f59e0b; /* orange */
+}
+
+.upload-warning {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+}

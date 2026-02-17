@@ -1,0 +1,44 @@
+.delivery-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.delivery-form .form-group {
+  margin-bottom: 15px;
+}
+
+.delivery-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.delivery-form input,
+.delivery-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.delivery-form .submit-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.map-wrapper {
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+}

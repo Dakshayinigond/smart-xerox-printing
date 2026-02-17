@@ -1,0 +1,107 @@
+.history-wrapper {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #79a3b6, #203a43, #2c5364);
+}
+
+.history-title {
+  text-align: center;
+  color: #ece4e4;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+
+/* List container */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Row Card */
+.history-row-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(89, 83, 83, 0.14);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px 30px;
+  color: #fff;
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.history-row-card:hover {
+  transform: translateY(-6px) rotateX(2deg);
+  box-shadow:
+    0 28px 50px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Left */
+.row-left {
+  margin-right: 25px;
+}
+
+.pdf-icon {
+  font-size: 36px;
+}
+
+/* Middle */
+.row-middle {
+  flex: 1;
+}
+
+.file-name {
+  font-size: 18px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+/* Right */
+.row-right {
+  margin-left: 25px;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-badge.completed {
+  background: rgba(0, 255, 0, 0.25);
+  color: #b6ffb6;
+}
+
+.status-badge.pending {
+  background: rgba(255, 193, 7, 0.25);
+  color: #ffe29a;
+}
+
+/* Empty */
+.no-orders {
+  text-align: center;
+  color: #ddd;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .history-row-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row-right {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}

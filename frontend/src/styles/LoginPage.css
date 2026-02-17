@@ -1,0 +1,182 @@
+/* ===========================
+   FULL PAGE BACKGROUND
+=========================== */
+.login-container,
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  /* Background image + gradient overlay */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(102, 126, 234, 0.75),
+      rgba(118, 75, 162, 0.75)
+    ),
+   url("../assets/login-bg.jpg") center / cover no-repeat;
+
+  animation: bgZoom 20s ease-in-out infinite alternate;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slow background zoom animation */
+@keyframes bgZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* ===========================
+   CARD STYLING
+=========================== */
+.login-card,
+.register-card {
+  width: 380px;
+  padding: 50px 40px;
+  border-radius: 25px;
+  text-align: center;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.18),
+    0 8px 15px rgba(0, 0, 0, 0.12);
+
+  animation: cardFloat 0.9s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover */
+.login-card:hover,
+.register-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.22),
+    0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Card entrance animation */
+@keyframes cardFloat {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===========================
+   TITLE
+=========================== */
+.login-card h1,
+.register-card h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #5b5fc7;
+  letter-spacing: 1px;
+}
+
+/* ===========================
+   INPUT FIELDS
+=========================== */
+.login-card input,
+.register-card input {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 12px 0;
+  border-radius: 14px;
+  border: none;
+  background: #f3f4f8;
+  font-size: 16px;
+
+  box-shadow:
+    inset 2px 2px 6px rgba(0, 0, 0, 0.08),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.8);
+
+  transition: all 0.3s ease;
+}
+
+.login-card input:focus,
+.register-card input:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow:
+    inset 1px 1px 4px rgba(0, 0, 0, 0.15),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.9);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+.login-card button,
+.register-card button {
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 22px;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover,
+.register-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================
+   MESSAGE
+=========================== */
+.message {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+/* ===========================
+   SWITCH LINK
+=========================== */
+.switch-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.switch-link a {
+  color: #5b5fc7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 480px) {
+  .login-card,
+  .register-card {
+    width: 90%;
+    padding: 40px 25px;
+  }
+}

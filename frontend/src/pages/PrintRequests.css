@@ -1,0 +1,17 @@
+/* PrintRequests.css */
+.print-requests-wrapper {
+  padding: 20px;
+}
+.print-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.print-requests-table th,
+.print-requests-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+.print-requests-table th {
+  background-color: #f4f4f4;
+}

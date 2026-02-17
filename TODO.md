@@ -1,0 +1,3 @@
+- [ ] Update backend/routes/adminRoutes.js to include users count in /stats endpoint
+- [ ] Update frontend/src/pages/AdminDashboard.jsx to display number of users
+- [ ] Test the changes by running the server and checking the dashboard
